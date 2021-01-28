@@ -1,0 +1,1 @@
+Pre-project: I am going to replicate the google homepage to familiarize myself with page layout.
