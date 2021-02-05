@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Evan's google homepage project</title>
+        <style>
+            body {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+
+            .navbar {
+                grid-row: 1 / 2;
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+
+            .topleft {
+                justify-self: left;
+            }
+
+            .topright {
+                justify-self: right;
+            }
+
+            .content {
+                grid-row: 2 / 3;
+                display: grid;
+                grid-template-rows: auto auto auto;
+                gap: 25px;
+            }
+
+            .logo {
+                grid-row: 1 / 2;
+                justify-self: center;
+                align-self: center;
+            }
+
+            .searchbar {
+                grid-row: 2 / 3;
+                justify-self: center;
+                align: center;
+            }
+
+            .searchbuttons {
+                grid-row: 3 / 4;
+                justify-self: center;
+                align-self: center;
+            }
+
+            .bottom {
+                grid-row: 3 / 4;
+                align-self: bottom;
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+
+            .bottomleft {
+                grid-column: 1 /2;
+            }
+
+            .bottommid {
+                justify-self: center;
+            }
+
+            .bottomright {
+                justify-self: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="topleft">
+                <a class="about" href="">About</a>
+                <a class="store" href="">Store</a>
+            </div>
+            <div class="topright">
+                <a class="gmail" href="">Gmail</a>
+                <a class="images" href="">Images</a>
+            </div>
+        </div>
+        <div class="content">
+            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+            <form class="searchbar">
+                <input type="text">
+            </form>
+            <form class="searchbuttons">
+                <button class="searchbutton">Google Search</button>
+                <button class="lucky">I'm Feeling Lucky</button>
+            </form>
+        </div>
+        <div class="bottom">
+            <div class="bottomleft">
+                <a class="advertising" href="">Advertising</a>
+                <a class="Business" href="">Business</a>
+                <a class="how" href="">How Search Works</a>
+            </div>
+            <div class="bottommid">
+                <p>Carbon neutral since 2007</p>
+            </div>
+            <div class="bottomright">
+                <a class="privacy" href="">Privacy</a>
+                <a class="terms" href="">Terms</a>
+                <a class="settings" href="">Settings</a>
+            </div>
+        </div>
+    </body>
+</html>
